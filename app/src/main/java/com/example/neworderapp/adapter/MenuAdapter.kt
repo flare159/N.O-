@@ -71,7 +71,7 @@ class MenuAdapter(
             val formattedPrice = NumberFormat.getNumberInstance().format(menu.price)
             binding.menuPrice.text = formattedPrice + "원"
             if (menu.id != null) {
-                val imageUrl = "http://10.100.103.28:8080/ROOT/api/menu/menuimage/${menu.id}?timestamp=${System.currentTimeMillis()}"
+                val imageUrl = "http://이미지서버주소/ROOT/api/menu/menuimage/${menu.id}?timestamp=${System.currentTimeMillis()}"
                 Log.d("Image URL111 : ", imageUrl)
 
                 Glide.with(binding.root.context)
